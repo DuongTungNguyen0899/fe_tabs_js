@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+html {
+    background-color: #a2b2be;
+}
+
+#tabs {
+    &.container {
+        width: 1200px;
+        padding-left: 100px;
+        padding-right: 100px;
+        .tab_items{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 15px;
+            background-color: #fff;
+            i{
+                margin-right: 5px;
+            }
+        }
+        .tab_contents{
+            display: block;
+            background-color: #fff;
+            padding: 10px 55px 20px;
+        }
+    }
+}

@@ -10,51 +10,213 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
-    <div id="tabs" class="container">
-        <div class="tab">
-            <div class="tab_items">
-                <div class="tab_item">
-                    <i class="fa-solid fa-house"></i>
-                    Home
-                </div>
-                <div class="tab_item">
-                    <i class="fa-solid fa-bus"></i>
-                    Bus
-                </div>
-                <div class="tab_item">
-                    <i class="fa-solid fa-taxi"></i>
-                    Taxi
-                </div>
-                <div class="tab_item">
-                    <i class="fa-solid fa-plane"></i>
-                    Airline
-                </div>
+    <!-- <div id="ta" class="container">
+        <div class="tabs"> -->
+    <!-- <div class="tab-item active">
+                <i class="tab-icon fas fa-code"></i>
+                React
             </div>
-            <div class="tab_contents">
-                <div class="tab_content">
-                    <h2>Home</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laborum nulla est hic odio
-                        blanditiis officiis inventore ipsam.</p>
-                </div>
-                <div class="tab_content">
-                    <h2>Bus</h2>
-                    <p>Laudantium, laborum nulla est hic odio blanditiis officiis inventore ipsam.</p>
-                </div>
-                <div class="tab_content">
-                    <h2>Taxi</h2>
-                    <p> labore officia officiis aperiam maiores explicabo iure voluptatum repudiandae assumenda corrupti exercitationem vel corporis?</p>
-                </div>
-                <div class="tab_content">
-                    <h2>Airline</h2>
-                    <p>Great value fares with Vietnam Airlines. Book today and save! Skytrax – 4 Star airline. Official website. Earn frequent flyer miles with Lotusmiles.</p>
-                </div>
+            <div class="tab-item">
+                <i class="tab-icon fas fa-cog"></i>
+                Angular
+            </div>
+            <div class="tab-item">
+                <i class="tab-icon fas fa-plus-circle"></i>
+                Ember
+            </div>
+            <div class="tab-item">
+                <i class="tab-icon fas fa-pen-nib"></i>
+                Vue.JS
+            </div> -->
+
+    <!-- <div class="tab_item active">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </div>
+            <div class="tab_item">
+                <i class="fa-solid fa-bus"></i>
+                Bus
+            </div>
+            <div class="tab_item">
+                <i class="fa-solid fa-taxi"></i>
+                Taxi
+            </div>
+            <div class="tab_item">
+                <i class="fa-solid fa-plane"></i>
+                Airline
+            </div>
+            <div class="line"></div>
+        </div> -->
+
+    <!-- Tab content -->
+    <!-- <div class="tab-content">
+            <div class="tab-pane active">
+                <h2>React</h2>
+                <p>React makes it painless to create interactive UIs. Design simple views for each state in your
+                    application, and React will efficiently update and render just the right components when your data
+                    changes.</p>
+            </div>
+            <div class="tab-pane">
+                <h2>Angular</h2>
+                <p>Angular is an application design framework and development platform for creating efficient and
+                    sophisticated single-page apps.</p>
+            </div>
+            <div class="tab-pane">
+                <h2>Ember</h2>
+                <p>Ember.js is a productive, battle-tested JavaScript framework for building modern web applications. It
+                    includes everything you need to build rich UIs that work on any device.</p>
+            </div>
+            <div class="tab-pane">
+                <h2>Vue.js</h2>
+                <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike
+                    other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. </p>
+            </div>
+        </div> -->
+    <!-- <div class="tab_content">
+            <div class="tab-pane active">
+                <h2>Home</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laborum nulla est hic odio
+                    blanditiis officiis inventore ipsam.</p>
+            </div>
+            <div class="tab-pane">
+                <h2>Bus</h2>
+                <p>Lae officia officiis aperiam maiores explicabo iure voluptatum repudiandae assumenda corrupti
+                    exercitationem vel corporisinventore ipsam.</p>
+            </div>
+            <div class="tab-pane">
+                <h2>Taxi</h2>
+                <p> labore officia officiis aperiam maiores explicabo iure voluptatum repudiandae assumenda corrupti
+                    exercitationem vel corporis?</p>
+            </div>
+            <div class="tab-pane">
+                <h2>Airline</h2>
+                <p>Great value fares with Vietnam Airlines. Book today and save! Skytrax – 4 Star airline. Official
+                    website. Earn frequent flyer miles with Lotusmiles.</p>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+    <div id="bang" class="container">
+        <div class="tab-its">
+            <div class="tab-it active">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </div>
+            <div class="tab-it">
+                <i class="fa-solid fa-bus"></i>
+                Bus
+            </div>
+            <div class="tab-it">
+                <i class="fa-solid fa-taxi"></i>
+                Taxi
+            </div>
+            <div class="tab-it">
+                <i class="fa-solid fa-plane"></i>
+                Airline
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="tab-cons">
+            <div class="tab-con active">
+                <h2>Home</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laborum nulla est hic odio
+                    blanditiis officiis inventore ipsam.</p>
+            </div>
+            <div class="tab-con">
+                <h2>Bus</h2>
+                <p>Laudantium, laborum nulla est hic odio blanditiis officiis inventore ipsam.</p>
+            </div>
+            <div class="tab-con">
+                <h2>Taxi</h2>
+                <p> labore officia officiis aperiam maiores explicabo iure voluptatum repudiandae assumenda corrupti
+                    exercitationem vel corporis?</p>
+            </div>
+            <div class="tab-con">
+                <h2>Airline</h2>
+                <p>Great value fares with Vietnam Airlines. Book today and save! Skytrax – 4 Star airline. Official
+                    website. Earn frequent flyer miles with Lotusmiles.</p>
             </div>
         </div>
     </div>
 
+    <script>
+
+        const it_tab = document.querySelector.bind(document);
+        const all_tab = document.querySelectorAll.bind(document);
+
+        const head_tabs = all_tab(".tab-it");
+        const content_tabs = all_tab(".tab-con");
+
+        const tabActi = it_tab(".tab-it.active");
+        const line = it_tab(".tab-its .line");
+
+        requestIdleCallback(function () {
+            line.style.left = tabActi.offsetLeft + "px";
+            line.style.width = tabActi.offsetWidth + "px";
+        });
+
+        head_tabs.forEach((tab, index) => {
+            const content_tab = content_tabs[index];
+
+
+
+            tab.onclick = function () {
+                it_tab(".tab-it.active").classList.remove("active");
+                it_tab(".tab-con.active").classList.remove("active");
+
+                line.style.left = this.offsetLeft + "px";
+                line.style.width = this.offsetWidth + "px";
+
+                this.classList.add("active");
+                content_tab.classList.add("active");
+            };
+
+        });
+
+
+        // const $ = document.querySelector.bind(document);
+        // const $$ = document.querySelectorAll.bind(document);
+
+        // const tabs = $$(".tab_item");
+        // const panes = $$(".tab-pane");
+
+        // // const tabActive = $(".tab-item.active");
+        // // const line = $(".tabs .line");
+
+        // // SonDN fixed - Active size wrong size on first load.
+        // // Original post: https://www.facebook.com/groups/649972919142215/?multi_permalinks=1175881616551340
+        // // requestIdleCallback(function () {
+        // //   line.style.left = tabActive.offsetLeft + "px";
+        // //   line.style.width = tabActive.offsetWidth + "px";
+        // // });
+
+        // tabs.forEach((tab, index) => {
+        //     const pane = panes[index];
+
+        //     tab.onclick = function () {
+        //         $(".tab_item.active").classList.remove("active");
+        //         $(".tab-pane.active").classList.remove("active");
+
+        //         // line.style.left = this.offsetLeft + "px";
+        //         // line.style.width = this.offsetWidth + "px";
+
+        //         this.classList.add("active");
+        //         pane.classList.add("active");
+        //     };
+        // });
+
+
+
+
+    </script>
 </body>
 
 </html>

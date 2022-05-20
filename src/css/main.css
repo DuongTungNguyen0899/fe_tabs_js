@@ -577,28 +577,83 @@ body {
 }
 
 html {
-  background-color: #a2b2be;
+  background-color: #6667ab;
 }
 
-#tabs.container {
+#bang {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+#bang.container {
   width: 1200px;
   padding-left: 100px;
   padding-right: 100px;
 }
-#tabs.container .tab_items {
+#bang.container .tab-its {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 20px 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #fff;
+  position: relative;
 }
-#tabs.container .tab_items i {
+#bang.container .tab-its .tab-it {
+  width: 260px;
+  padding: 16px 20px 11px 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #c23564;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.6;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#bang.container .tab-its .tab-it:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+#bang.container .tab-its .tab-it.active {
+  opacity: 1;
+}
+#bang.container .tab-its i {
   margin-right: 5px;
 }
-#tabs.container .tab_contents {
-  display: block;
+#bang.container .tab-its .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #fd333f;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#bang.container .tab-cons {
   background-color: #fff;
   padding: 10px 55px 20px;
+}
+#bang.container .tab-cons .tab-con {
+  color: #333;
+  display: none;
+}
+#bang.container .tab-cons .tab-con.active {
+  display: block;
+}
+#bang.container .tab-cons .tab-con h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+#bang .tab-icon {
+  font-size: 24px;
+  width: 32px;
+  position: relative;
+  top: 2px;
 }
